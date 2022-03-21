@@ -5,19 +5,23 @@
   <meta charset="utf-8">
   <meta name="author" content="Jueru">
   <meta name="description" content="Jueru UX Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jueru - PlutoPay</title>
   <link href="img/logo/favicon.ico.png" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="plutopay" id="plutopay">
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
     <div>
       <nav>
         <ul>
-          <li><a href="index.html">Jueru</a></li>
-          <li><a href="work.html">< BACK</a>
+          <li><a href="index.html" class="button index">Jueru</a></li>
+          <li><a href="work.html" class="button link">Back</a>
           </li>
         </ul>
       </nav>
@@ -30,7 +34,7 @@
       <div>
         <h2>PlutoPay provides users with a single platform to transfer & receive money, make foreign currency payments, invest online, and more with ease.</h2>
         <div>
-          <div><a href="BEHANCE-URL">View Case Study ></a></div>
+          <div><a href="BEHANCE-URL" target="_blank" class="button link">View Case Study ></a></div>
           <div>
             <div>
               <h4>Role</h4>
@@ -47,7 +51,12 @@
           </div>
         </div>
       </div>
-      <div><img src="/img/plutopay/presentation/cover.gif" alt="PlutoPay Gif"></div>
+      <div>
+        <picture>
+          <source srcset="img/plutopay/presentation/cover@1x.jpg" media="(max-width:767px)">
+          <img src="img/plutopay/presentation/cover@2x.jpg" alt="PlutoPay">
+        </picture>
+      </div>
       <!-- Project Prompt -->
       <div>
         <div>
@@ -123,8 +132,8 @@
         <div>
           <div>
             <picture>
-              <source srcset="img/plutopay/resources/user-flow@1x.jpg" media="(max-width:767px)">
-              <img src="img/plutopay/resources/user-flow@2x.jpg" alt="User Flow">
+              <source srcset="img/plutopay/resources/user-flow@1x.png" media="(max-width:767px)">
+              <img src="img/plutopay/resources/user-flow@2x.png" alt="User Flow">
             </picture>
           </div>
           <div>
@@ -306,7 +315,8 @@
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tortor sed dignissim iaculis tellus.</p>
           </div>
-          <div><a href="https://www.figma.com/proto/Fhz0hWHd2SO11GrhUa0YF1/PlutoPay-Wireframes?node-id=350%3A872&viewport=241%2C48%2C0.05&scaling=scale-down&starting-point-node-id=435%3A7005" target="_blank">View Prototype ></a></div>
+          <div><a href="https://www.figma.com/proto/Fhz0hWHd2SO11GrhUa0YF1/PlutoPay-Wireframes?node-id=350%3A872&viewport=241%2C48%2C0.05&scaling=scale-down&starting-point-node-id=435%3A7005" target="_blank" class="button link">View Prototype ></a>
+          </div>
         </div>
         <!-- Ending image -->
         <div>
@@ -331,14 +341,14 @@
   <footer>
     <div>
       <div>
-        <a href="info.html#CONTACT" target="_self">Get in Touch.</a>
+        <a href="info.html#CONTACT" target="_self" class="button contact">Get in Touch.</a>
       </div>
       <p>Jueru</p>
       <div>
         <ul>
-          <li><a href="mailto:info@jueru.com" target="_blank">info@jueru.com</a></li>
-          <li><a href="LINKEDIN-URL" target="_blank">Linkedin</a></li>
-          <li><a href="BEHANCE-URL" target="_blank">Behance</a></li>
+          <li><a href="mailto:info@jueru.com" target="_blank" class="button info">info@jueru.com</a></li>
+          <li><a href="LINKEDIN-URL" target="_blank" class="button info">Linkedin</a></li>
+          <li><a href="BEHANCE-URL" target="_blank" class="button info">Behance</a></li>
         </ul>
       </div>
       <div>
