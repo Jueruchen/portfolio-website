@@ -1,17 +1,101 @@
 @font-face {
-  font-family: "gt_americaextended_regular", sans-serif;
-  src: url('gt-america-ext-reg-webfont.woff2') format('woff2'),
-    url('gt-america-ext-reg-webfont.woff') format('woff');
+  font-family: 'gt_americaextended_regular';
+  src: url('font/gt-america/gt-america-ext-reg.woff2') format('woff2'),
+    url('font/gt-america/gt-america-ext-reg.woff') format('woff'),
+    url('font/gt-america/gt-america-ext-reg.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "gt_americaextended_medium", sans-serif;
-  src: url('gt-america-ext-medium-webfont.woff2') format('woff2'),
-    url('gt-america-ext-medium-webfont.woff') format('woff');
+  font-family: 'gt_americaextended_medium';
+  src: url('font/gt-america/gt-america-ext-medium.woff2') format('woff2'),
+    url('font/gt-america/gt-america-ext-medium.woff') format('woff'),
+    url('font/gt-america/gt-america-ext-medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+/* Layout styling */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+  /* 0 top and bottom, 15px left and right padding */
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  color: #000000;
+}
+
+#hero {
+  background: #ffffff;
+  padding-left: 50px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-allign: left;
+}
+
+#work {
+  background: #ffffff;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  background: #ffffff;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-right: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
 
 body {
@@ -20,7 +104,7 @@ body {
   font-size: 16px;
   /* all paragraph font size 16px */
   font-weight: 400;
-  line-height: 130%;
+  line-height: 180%;
   color: #000000;
 }
 
@@ -42,7 +126,7 @@ h2 {
 
 h3 {
   font-family: 'gt_americaextended_medium';
-  font-size: 1.13em;
+  font-size: 1.125em;
   /* 18px */
   line-height: 130%;
   color: #000000;
@@ -50,7 +134,7 @@ h3 {
 
 h4 {
   font-family: 'gt_americaextended_regular';
-  font-size: 1.13em;
+  font-size: 1.125em;
   /* 18px */
   line-height: 130%;
   color: #000000;
@@ -58,7 +142,7 @@ h4 {
 
 h5 {
   font-family: 'gt_americaextended_regular';
-  font-size: 0.88em;
+  font-size: 0.875em;
   /* 14px */
   line-height: 130%;
   color: #000000;
@@ -73,14 +157,9 @@ h6 {
   color: #000000;
 }
 
-img {
-  width: 100%;
-}
-
 .button.contact {
   display: inline-block;
   color: #000000;
-  padding: 10px;
   text-decoration: underline;
   transition: 0.2s opacity;
 }
@@ -92,7 +171,6 @@ img {
 
 .button.info {
   color: #000000;
-  padding: 10px;
   text-decoration: none;
   transition: 0.2s opacity;
 }
@@ -104,22 +182,53 @@ img {
 
 .button.link {
   color: #000000;
-  padding: 10px;
   text-decoration: none;
   transition: 0.2s opacity;
 }
 
-.button.link:hover {
+.button.link:hover,
+.button.link:focus {
   opacity: 0.5;
+  text-decoration: underline;
 }
 
-.button.index {
-  color: #000000;
-  padding:10px;
-  text-decoration: none;
+.button.link:active {
+  text-decoration: underline;
 }
 
-.button.index:hover {
+.work.detail {
   color: #000000;
   text-decoration: none;
+  font-family: 'gt_americaextended_medium';
+  font-size: 3em;
+}
+
+.work.detail:hover {
+  color: #ED7930;
+}
+
+.img.hover {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'gt_americaextended_medium';
+  font-size: 3em;
+}
+
+ul>li {
+  list-style-type: none;
+}
+
+#about {
+  background: #ffffff;
+  padding-left: 50px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+#about h1 {
+  text-aligh: left;
+  padding-bottom: 70px;
 }

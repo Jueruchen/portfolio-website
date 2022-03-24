@@ -17,10 +17,12 @@
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logo/header-logo.svg" alt="Jueru">
+      </a>
       <nav>
-        <ul>
-          <li><a href="index.html" class="button index">Jueru</a></li>
+        <ul class="navigation">
           <li><a href="work.html" class="button link">Work</a></li>
           <li><a href="info.html" class="button link">Info</a></li>
         </ul>
@@ -31,33 +33,21 @@
   <!-- Start of the main section -->
   <main>
     <!-- For the hero section -->
-    <div>
-      <div>
+    <div id="hero">
+      <div class="container">
         <h1>A designer with a focus on aesthetic language, user-centred experience, and digital products.</h1>
         <p>I'm Jueru, a UX/UI designer currently living in Montreal, Canada. Open to job opportunities and to collaborate on some fun projects.</p>
       </div>
     </div>
 
-    <!-- First Work -->
-    <div>
-      <div>
-        <h6>01</h6>
-        <h1>PlutoPay</h1>
-        <div>
-          <div>
-            <picture>
-              <source srcset="img/plutopay/presentation/cover@1x.jpg" media="(max-width:767px)">
-              <img src="img/plutopay/presentation/cover@2x.jpg" alt="PlutoPay Image">
-            </picture>
-            <div>
-              <a href="plutopay.html" target="_self" class="button link">Read more</a>
-            </div>
-          </div>
-        </div>
+    <!-- Work Index -->
+    <div id="work">
+      <div class="container">
+        <p>01</p>
+        <a href="plutopay.html" class="img hover">PlutoPay</a>
+        <img src="img/plutopay/presentation/cover@2x.jpg">
       </div>
-
-      <!-- Second Work -->
-      <div>
+      <div class="container">
         <h6>02</h6>
         <h1>Upcoming</h1>
       </div>
@@ -68,7 +58,7 @@
 
   <!-- For the footer -->
   <footer>
-    <div>
+    <div class="container">
       <div>
         <a href="info.html#CONTACT" target="_self" class="button contact">Get in Touch.</a>
       </div>
