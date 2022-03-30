@@ -1,323 +1,618 @@
 @font-face {
-    font-family: "gt_americaextended_regular";
-    src: url("font/gt-america/gt-america-ext-reg.woff2") format("woff2"), url("font/gt-america/gt-america-ext-reg.woff") format("woff"), url("font/gt-america/gt-america-ext-reg.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "gt_americaextended_regular";
+  src: url("../font/gt-america/gt-america-ext-reg.woff2") format("woff2"), url("font/gt-america/gt-america-ext-reg.woff") format("woff"), url("font/gt-america/gt-america-ext-reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "gt_americaextended_medium";
-    src: url("font/gt-america/gt-america-ext-medium.woff2") format("woff2"), url("font/gt-america/gt-america-ext-medium.woff") format("woff"), url("font/gt-america/gt-america-ext-medium.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "gt_americaextended_medium";
+  src: url("../font/gt-america/gt-america-ext-medium.woff2") format("woff2"), url("font/gt-america/gt-america-ext-medium.woff") format("woff"), url("font/gt-america/gt-america-ext-medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Layout styling */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    padding: 0 15px;
-    /* 0 top and bottom, 15px left and right padding */
+  padding: 0 15px;
+  /* 0 top and bottom, 15px left and right padding */
 }
 
 .row {
-    margin: 25px 0;
-    /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 img {
-    width: 100%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 header {
-    padding: 10px 0;
-    text-align: left;
-    position: fixed;
-    width: 100%;
+  padding: 10px 0;
+  text-align: left;
+  position: fixed;
+  width: 100%;
 }
 
 nav {
-    float: right;
-    margin-right: 10px;
+  float: right;
+  margin-right: 10px;
 }
 
-nav > ul {
-    list-style-type: none;
-    padding: 0;
+nav>ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-nav > ul > li {
-    display: inline-block;
+nav>ul>li {
+  display: inline-block;
 }
 
-nav > ul > li > a {
-    padding: 0 15px;
-    color: #000000;
+nav>ul>li>a {
+  padding: 0 15px;
+  color: #000000;
 }
 
 .logo {
-    padding-top: 5px;
-    max-width: 100px;
-    text-align: left;
-    display: inline-block;
-    margin-left: 15px;
+  padding-top: 10px;
+  max-width: 80px;
+  text-align: left;
+  display: inline-block;
+  margin-left: 16px;
 }
 
 #hero {
-    background: #ffffff;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 70px;
-    padding-right: 20px;
-    display: inline-block;
-    width: 100%;
+  background: #ffffff;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  padding-right: 20px;
+  display: inline-block;
+  width: 100%;
 }
 
 #hero h1 {
-    text-allign: left;
+  text-allign: left;
 }
 
 #work-index {
-    background: #ffffff;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    padding-right: 20px;
-    display: inline-block;
-    width: 100%;
+  background: #ffffff;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+#my-work-index {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 50px;
+  display: inline-block;
+  width: 100%;
 }
 
 footer {
-    background: #ffffff;
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    padding-right: 0;
-    display: inline-block;
-    width: 100%;
+  background: #ffffff;
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
 }
 
 main {
-    padding-top: 100px;
+  padding-top: 80px;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 body {
-    background-color: #ffffff;
-    font-family: "EB Garamond", serif;
-    font-size: 16px;
-    /* all paragraph font size 16px */
-    font-weight: 400;
-    line-height: 180%;
-    color: #000000;
+  background-color: #ffffff;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+  /* all paragraph font size 16px */
+  font-weight: 400;
+  line-height: 180%;
+  color: #000000;
 }
 
 h1 {
-    font-family: "gt_americaextended_medium";
-    font-size: 3em;
-    /* 48px */
-    line-height: 150%;
-    color: #000000;
+  font-family: "gt_americaextended_medium";
+  font-size: 3em;
+  /* 48px */
+  line-height: 150%;
+  color: #000000;
 }
 
 h2 {
-    font-family: "gt_americaextended_regular";
-    font-size: 1.5em;
-    /* 24px */
-    line-height: 130%;
-    color: #000000;
+  font-family: "gt_americaextended_regular";
+  font-size: 1.5em;
+  /* 24px */
+  line-height: 130%;
+  color: #000000;
 }
 
 h3 {
-    font-family: "gt_americaextended_medium";
-    font-size: 1.125em;
-    /* 18px */
-    line-height: 130%;
-    color: #000000;
+  font-family: "gt_americaextended_medium";
+  font-size: 1.125em;
+  /* 18px */
+  line-height: 130%;
+  color: #000000;
 }
 
 h4 {
-    font-family: "gt_americaextended_regular";
-    font-size: 1.125em;
-    /* 18px */
-    line-height: 130%;
-    color: #000000;
+  font-family: "gt_americaextended_regular";
+  font-size: 1.125em;
+  /* 18px */
+  line-height: 130%;
+  color: #000000;
 }
 
 h5 {
-    font-family: "gt_americaextended_regular";
-    font-size: 0.875em;
-    /* 14px */
-    line-height: 130%;
-    color: #000000;
+  font-family: "gt_americaextended_regular";
+  font-size: 0.875em;
+  /* 14px */
+  line-height: 130%;
+  color: #000000;
 }
 
 h6 {
-    font-family: "EB Garamond";
-    font-size: 0.88em;
-    /* 14px */
-    line-height: 130%;
-    font-weight: 400;
-    color: #000000;
+  font-family: "EB Garamond";
+  font-size: 0.88em;
+  /* 14px */
+  line-height: 130%;
+  font-weight: 400;
+  color: #000000;
+}
+
+.enlarge {
+  padding-top: 20px;
+  line-height: 180%;
 }
 
 .button.contact {
-    display: inline-block;
-    color: #000000;
-    text-decoration: underline;
-    transition: 0.2s opacity;
+  display: inline-block;
+  color: #000000;
+  text-decoration: underline;
+  transition: 0.2s opacity;
 }
 
 .button.contact:hover {
-    opacity: 0.5;
-    text-decoration: none;
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .button.info {
-    color: #000000;
-    text-decoration: none;
-    transition: 0.2s opacity;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.2s opacity;
 }
 
 .button.info:hover {
-    color: #ed7930;
-    text-decoration: underline;
+  color: #ed7930;
+  text-decoration: underline;
 }
 
 .button.link {
-    color: #000000;
-    text-decoration: none;
-    transition: 0.2s opacity;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.5s opacity;
 }
 
 .button.link:hover,
 .button.link:focus {
-    opacity: 0.5;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .button.link:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .work.detail {
-    color: #000000;
-    text-decoration: none;
-    font-family: "gt_americaextended_medium";
-    font-size: 3em;
+  color: #000000;
+  text-decoration: none;
+  font-family: "gt_americaextended_medium";
+  font-size: 3em;
 }
 
 .work.detail:hover {
-    color: #ed7930;
+  color: #ed7930;
 }
 
 .img.hover {
-    color: #000000;
-    text-decoration: none;
-    font-family: "gt_americaextended_medium";
-    font-size: 3em;
+  color: #000000;
+  text-decoration: none;
+  font-family: "gt_americaextended_medium";
+  font-size: 3em;
 }
 
-ul > li {
-    list-style-type: none;
+ul>li {
+  list-style-type: none;
 }
 
 #about {
-    background: #ffffff;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    display: inline-block;
-    width: 100%;
+  background: #ffffff;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  width: 100%;
 }
 
 #about h1 {
-    text-aligh: left;
-    padding-bottom: 70px;
+  text-aligh: left;
+  padding-bottom: 70px;
 }
 
 #about-list {
-    margin-left: 18px;
+  margin-left: 18px;
 }
 
 ul {
-    padding-inline-start: 0px;
+  padding-inline-start: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact-directory {
+  font-family: "gt_americaextended_medium";
+  font-size: 2em;
+  padding-bottom: 50px;
+}
+
+@keyframes color-change {
+  from {
+    fill: #C02F26
+  }
+
+  to {
+    fill: #FDF953
+  }
+}
+
+.red {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes blob-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(30px, 20px);
+  }
+}
+
+.yellow {
+  animation: 5s blob-move infinite alternate linear;
+}
+
+@keyframes blob-enlarge {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
+.black {
+  animation: 8s blob-enlarge infinite alternate linear;
 }
 
 /* Medium devices (640px and up) */
 @media only screen and (min-width: 640px) {
-    header {
-        text-align: unset;
-        padding: 5px 0 15px;
-    }
+  header {
+    text-align: unset;
+    padding: 5px 0 15px;
+  }
 
-    nav {
-        width: auto;
-        float: right;
-        margin-top: 2px;
-        margin-right: 10px;
-    }
+  nav {
+    width: auto;
+    float: right;
+    margin-right: 10px;
+  }
 
-    .logo {
-        max-width: 100px;
-        margin-top: 5px;
-        margin-left: 15px;
-    }
+  .logo {
+    max-width: 80px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
 
-    main {
-        padding-top: 80px;
-    }
+  main {
+    padding-top: 80px;
+  }
 
-    body {
-        font-size: 18px; /* using em for headings will automatically scale up h1-h6 */
-    }
+  body {
+    font-size: 18px;
+    /* using em for headings will automatically scale up h1-h6 */
+  }
 
-    #hero {
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 70px;
-        margin-bottom: 70px;
-    }
+  .enlarge {
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 180%;
+  }
 
-    #work-index {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  #hero {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 70px;
+  }
 
-    #about {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  #work-index {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
-    footer {
-        padding-left: 50px;
-    }
+  #about {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
-    .col-md-6 {
-        width: 50%;
-    }
+  footer {
+    padding-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
 
-    [class*="col-"] {
-        float: left;
-    }
+  .col-md-6 {
+    width: 50%;
+  }
 
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
+  [class*="col-"] {
+    float: left;
+  }
 
-    ul {
-        padding-inline-start: 0px;
-    }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
+  #contact-directory {
+    font-family: "gt_americaextended_medium";
+    font-size: 3em;
+    padding-bottom: 70px;
+  }
+
+  #my-work-index {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 /* Large devices (1024px and up) */
 @media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .logo {
+    max-width: 110px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  body {
+    font-size: 24px;
+    /* using em for headings will automatically scale up h1-h6 */
+  }
+
+  h1 {
+    line-height: 150%;
+  }
+
+  .enlarge {
+    padding-top: 40px;
+    font-size: 30px;
+    line-height: 180%;
+  }
+
+  #hero {
+    padding-left: 90px;
+    padding-right: 80px;
+    margin-bottom: 100px;
+  }
+
+  #hero h1 {
+    font-size: 80px;
+  }
+
+  #work-index {
+    padding-left: 90px;
+    padding-right: 80px;
+  }
+
+  #about {
+    padding-left: 90px;
+    padding-right: 80px;
+  }
+
+  footer {
+    padding-left: 90px;
+    margin-bottom: 50px;
+    margin-top: 90px;
+  }
+
+  .col-lg-5 {
+    width: 20%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
+  #my-work-index {
+    padding-left: 90px;
+    padding-right: 80px;
+  }
+
+  #contact-directory {
+    font-family: "gt_americaextended_medium";
+    font-size: 3em;
+    padding-bottom: 100px;
+  }
+
+  #info-skill {
+    margin-right: 100px;
+  }
+
+  #info-education {
+    margin-right: 120px;
+  }
+
+  #info-contact {
+    padding-right: 0;
+  }
 }
 
 /* X-large devices (1440px and up) */
 @media only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .logo {
+    max-width: 150px;
+    margin-top: 5px;
+  }
+
+  main {
+    padding-top: 180px;
+  }
+
+  body {
+    font-size: 30px;
+    /* using em for headings will automatically scale up h1-h6 */
+  }
+
+  h1 {
+    line-height: 160%;
+  }
+
+  .enlarge {
+    padding-top: 40px;
+    font-size: 36px;
+    line-height: 180%;
+  }
+
+  #hero {
+    padding-left: 180px;
+    padding-right: 120px;
+    margin-bottom: 100px;
+  }
+
+  #hero h1 {
+    font-size: 110px;
+  }
+
+  #work-index {
+    padding-left: 180px;
+    padding-right: 120px;
+  }
+
+  #about {
+    padding-left: 180px;
+    padding-right: 120px;
+  }
+
+  footer {
+    padding-left: 90px;
+    margin-bottom: 70px;
+    margin-top: 120px;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
+  #my-work-index {
+    padding-left: 180px;
+    padding-right: 80px;
+  }
+
+  #contact-directory {
+    font-family: "gt_americaextended_medium";
+    font-size: 3em;
+    padding-bottom: 100px;
+  }
+
+  #info-skill {
+    margin-right: 140px;
+  }
+
+  #info-education {
+    margin-right: 160px;
+  }
+
+  #info-contact {
+    padding-right: 0;
+  }
 }
