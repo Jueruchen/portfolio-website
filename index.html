@@ -10,14 +10,16 @@
   <link href="img/logo/favicon.ico.png" rel="shortcut icon" />
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
 
 <body>
   <!-- For the header -->
   <header>
-    <!-- For the navigation -->
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html" class="logo">
         <img src="img/logo/header-logo.svg" alt="Jueru" />
       </a>
@@ -25,9 +27,11 @@
         <ul class="navigation">
           <li><a href="work.html" class="button link">Work</a></li>
           <li><a href="info.html" class="button link">Info</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-    </div>
+        </div>
+      </div>
   </header>
 
   <!-- Start of the main section -->
@@ -36,48 +40,15 @@
     <div id="hero">
       <div class="container">
         <h1>A designer with a focus on aesthetic language, user-centred experience, and digital products.</h1>
-        <p class="enlarge">I'm Jueru, a UX/UI designer currently living in Montreal, Canada. Open to job opportunities and to collaborate on some fun projects.</p>
-      </div>
-      <div>
-        <svg width="653" height="484" viewBox="0 0 653 484" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_101_2)">
-            <g filter="url(#filter0_f_101_2)">
-              <path class="red" fill-rule="evenodd" clip-rule="evenodd"
-                d="M427.03 147.479C460.53 145.974 490.722 166.121 513.684 190.56C535.881 214.184 550.147 244.821 548.927 277.214C547.748 308.539 530.757 336.677 507.395 357.579C485.358 377.297 456.493 383.758 427.03 386.279C393.754 389.126 354.063 397.356 331.624 372.62C309.396 348.116 325.036 310.155 328.093 277.214C330.706 249.05 330.673 220.5 347.825 198.009C367.567 172.122 394.507 148.94 427.03 147.479Z"
-                fill="#C02F26" fill-opacity="0.6" />
-            </g>
-            <g filter="url(#filter1_f_101_2)">
-              <path class="black" fill-rule="evenodd" clip-rule="evenodd"
-                d="M183.689 213.153C168.883 187.101 113.518 211.447 119.366 182.163C125.567 151.109 155.53 132.299 183.331 117.541C212.615 101.996 256.012 83.711 288.077 92.667C322.061 102.159 342.784 131.815 354.42 165.327C365.319 196.72 350.509 230.6 332.667 258.363C318.732 280.046 292.695 286.167 269.559 297.372C246.264 308.654 224.159 330.747 199.364 322.923C174.278 315.006 196.754 236.14 183.689 213.153Z"
-                fill="#0D0A0E" fill-opacity="0.41" />
-            </g>
-            <g filter="url(#filter2_f_101_2)">
-              <path class="yellow" fill-rule="evenodd" clip-rule="evenodd"
-                d="M188.152 219.139C212.08 217.185 224.376 244.234 244.911 255.578C268.766 268.756 308.267 264.555 316.011 289.773C323.721 314.88 298.105 340.099 275.794 356.144C258.656 368.469 235.541 358.706 214.58 362.716C193.282 366.791 173.532 388.426 154.295 379.388C134.772 370.217 135.106 344.208 131.574 323.722C128.098 303.565 124.556 282.982 134.501 264.597C145.86 243.602 163.521 221.151 188.152 219.139Z"
-                fill="#FDF953" fill-opacity="0.56" />
-            </g>
-          </g>
-          <defs>
-            <filter id="filter0_f_101_2" x="205.134" y="32.6351" width="458.631" height="472.028" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="57.3823" result="effect1_foregroundBlur_101_2" />
-            </filter>
-            <filter id="filter1_f_101_2" x="23.2975" y="-5.33395" width="430.479" height="425.535" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="47.8186" result="effect1_foregroundBlur_101_2" />
-            </filter>
-            <filter id="filter2_f_101_2" x="51.4922" y="142.529" width="342.429" height="315.556" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="38.2549" result="effect1_foregroundBlur_101_2" />
-            </filter>
-            <clipPath id="clip0_101_2">
-              <rect width="653" height="484" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+
+        <div class="subtitle marginTop10 flexEvenly">
+          <p class="blackLine"></p>
+          <p>Intro</p>
+          <p class="enlarge maxWidthSubtitle">I'm Jueru, a UX/UI designer currently living in Montreal, Canada. Open to
+            job
+            opportunities
+            and to collaborate on some fun projects.</p>
+        </div>
       </div>
     </div>
 
@@ -107,12 +78,10 @@
   <footer>
     <div class="container">
       <div>
-        <a href="info.html#contact" target="_self" class="button contact" id="contact-directory">Get in Touch.</a>
+        <a href="info.html#info-contact" target="_self" class="button contact" id="contact-directory">Get in Touch.</a>
       </div>
-      <div>
-        <div>
+      <div class="footer contact">
           <p>Jueru</p>
-        </div>
         <div>
           <ul>
             <li><a href="mailto:info@jueru.com" target="_blank" class="button info">info@jueru.com</a></li>
@@ -120,14 +89,15 @@
             <li><a href="BEHANCE-URL" target="_blank" class="button info">Behance</a></li>
           </ul>
         </div>
-      </div>
-      <div>
-        <p>Jueru &copy; 2022</p>
+        <div>
+          <p>Jueru &copy; 2022</p>
+        </div>
       </div>
     </div>
   </footer>
 
-    <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

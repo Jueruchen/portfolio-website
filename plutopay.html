@@ -11,21 +11,26 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
 
 <body>
   <!-- For the header -->
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html" class="logo">
         <img src="img/logo/header-logo.svg" alt="Jueru" />
       </a>
       <nav>
         <ul class="navigation">
-          <li><a href="work.html" class="button link">Back</a></li>
+          <li><a href="work.html" class="button link">Work</a></li>
+          <li><a href="info.html" class="button link">Info</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-    </div>
+        </div>
+      </div>
   </header>
 
   <!-- Start of the main section -->
@@ -348,25 +353,26 @@
   <footer>
     <div class="container">
       <div>
-        <a href="info.html#CONTACT" target="_self" class="button contact" id="contact-directory">Get in Touch.</a>
+        <a href="info.html#info-contact" target="_self" class="button contact" id="contact-directory">Get in Touch.</a>
       </div>
-      <div>
-        <p>Jueru</p>
-      </div>
-      <div>
-        <ul>
-          <li><a href="mailto:info@jueru.com" target="_blank" class="button info">info@jueru.com</a></li>
-          <li><a href="LINKEDIN-URL" target="_blank" class="button info">Linkedin</a></li>
-          <li><a href="BEHANCE-URL" target="_blank" class="button info">Behance</a></li>
-        </ul>
-      </div>
-      <div>
-        <p>Jueru &copy; 2022</p>
+      <div class="footer contact">
+          <p>Jueru</p>
+        <div>
+          <ul>
+            <li><a href="mailto:info@jueru.com" target="_blank" class="button info">info@jueru.com</a></li>
+            <li><a href="LINKEDIN-URL" target="_blank" class="button info">Linkedin</a></li>
+            <li><a href="BEHANCE-URL" target="_blank" class="button info">Behance</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Jueru &copy; 2022</p>
+        </div>
       </div>
     </div>
   </footer>
 
-    <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

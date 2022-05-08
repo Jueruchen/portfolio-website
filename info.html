@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
   <header>
     <!-- For the navigation -->
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html" class="logo">
         <img src="img/logo/header-logo.svg" alt="Jueru" />
       </a>
@@ -25,10 +27,13 @@
         <ul class="navigation">
           <li><a href="work.html" class="button link">Work</a></li>
           <li><a href="info.html" class="button link">Info</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-    </div>
+        </div>
+      </div>
   </header>
+  <!-- End of header -->
 
   <!-- Start of the main section -->
   <main>
@@ -106,14 +111,15 @@
 
   <!-- For the footer -->
   <footer>
-    <div class="container">
+    <div class="container" id="info-footer">
       <div>
         <p>Jueru &copy; 2022</p>
       </div>
     </div>
   </footer>
 
-    <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
