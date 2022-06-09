@@ -267,6 +267,19 @@ main {
   text-decoration: underline;
 }
 
+/* button for the contact links */
+.contact.link {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.contact.link:hover {
+  color: #ed7930;
+  text-decoration: underline;
+  font-size: 1.25em;
+}
+
 /* button for navigation menu */
 .button.link {
   color: #000000;
@@ -305,6 +318,11 @@ main {
   text-decoration: none;
   font-family: 'gt_americaextended_medium';
   font-size: 3em;
+  transition: all 0.2s ease-in-out 0.2s;
+}
+
+.project.index:hover {
+  color: #ed7930;
 }
 
 /* .popover1 {top: 10px; left: 10px; position: relative;}
