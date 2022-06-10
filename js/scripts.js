@@ -19,7 +19,7 @@ function menuToggle() {
 //     mouseenter: function() {
 //         var $big = $('<img />', {'class': 'big_img1', src: this.src}),
 //             $title = $('<div class="title"/>').html(this.title),
-//             $frame = $('<div id="big" />');
+//             $frame = $('<div id="big" />'); 
 //
 //         $frame.append($big).append($title);
 //
